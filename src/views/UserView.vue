@@ -14,8 +14,10 @@ export default {
     VUserProfile,
   },
   data(){
-    return {
-      user:{name:''}
+    return{
+      user:{
+        name:''
+      }
     }
   }
 }

@@ -6,9 +6,9 @@
 <script>
 export default {
   name: 'UserProfile',
-  props: {
+  props:{
     user:{
-      type: Object,
+      type:Object,
       required:true,
       default:()=>({})
     }
