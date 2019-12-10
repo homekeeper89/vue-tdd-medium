@@ -1,7 +1,7 @@
 <template>
   <div>
     <VUserSearchForm />
-    <VUserProfile />
+    <VUserProfile :user="user"/>
   </div>
 </template>
 <script>
@@ -12,6 +12,11 @@ export default {
   components: {
     VUserSearchForm,
     VUserProfile,
+  },
+  data(){
+    return {
+      user:{name:''}
+    }
   }
 }
 </script>
