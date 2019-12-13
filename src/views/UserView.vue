@@ -5,6 +5,7 @@
   </div>
 </template>
 <script>
+import {mapState} from 'Vuex'
 import VUserSearchForm from '@/components/VUserSearchForm'
 import VUserProfile from '@/components/VUserProfile'
 export default {
@@ -13,12 +14,10 @@ export default {
     VUserSearchForm,
     VUserProfile,
   },
-  data(){
-    return{
-      user:{
-        name:''
-      }
-    }
+  computed:{
+    ...mapState({
+      user:'user'
+    })
   }
 }
 </script>
