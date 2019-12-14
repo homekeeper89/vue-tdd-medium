@@ -1,6 +1,9 @@
 <template>
-  <div>
-    UserProfile
+  <div class="user-profile">
+    <img class="user-profile__avatar" :src = 'user.avatar__url'>
+    <div class="user-profile__name">
+      {{user.name}}
+    </div>
   </div>
 </template>
 <script>
