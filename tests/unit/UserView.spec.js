@@ -5,7 +5,7 @@ import Vuex from 'vuex';
 import UserView from '@/views/UserView'
 import VUserSearchForm from '@/components/VUserSearchForm'
 import VUserProfile from '@/components/VUserProfile'
-import userFixture from '../fixtures/user'
+import userFixture from './fixtures/user'
 
 const localVue = createLocalVue()
 localVue.use(Vuex)
