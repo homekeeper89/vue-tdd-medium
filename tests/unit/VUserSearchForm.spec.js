@@ -17,6 +17,7 @@ describe('UserSearchForm', ()=>{
     const {wrapper} = build()
     expect(wrapper.html()).toMatchSnapshot()
   })
+
   it('render main, child component', ()=>{
     const {input, button} = build()
     expect(input().exists()).toBe(true)
