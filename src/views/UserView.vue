@@ -5,7 +5,7 @@
   </div>
 </template>
 <script>
-import {mapState} from 'Vuex'
+import { mapState } from 'vuex'
 import VUserSearchForm from '@/components/VUserSearchForm'
 import VUserProfile from '@/components/VUserProfile'
 export default {
