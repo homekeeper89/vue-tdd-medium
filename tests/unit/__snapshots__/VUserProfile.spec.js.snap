@@ -2,6 +2,25 @@
 
 exports[`VUserProfile render main components 1`] = `[Function]`;
 
+exports[`VUserProfile test render main componets 1`] = `
+<div class="user-profile">
+  &lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+  <img src="https://github.com/images/error/octocat_happy.gif" class="user-profile__avatar">
+  <div class="user-profile__name">
+    monalisa octocat
+  </div>
+  <div class="user-profile__bio">
+    There once was...
+  </div>
+  =======
+  <img class="user-profile__avatar">
+  <div class="user-profile__name">
+    monalisa octocat
+  </div>
+  &gt;&gt;&gt;&gt;&gt;&gt;&gt; feature/testing-VUserProfile-2
+</div>
+`;
+
 exports[`VUserProfile이 제대로 렌더 되는지 확인 render main html 1`] = `
 <div>
   UserProfile
