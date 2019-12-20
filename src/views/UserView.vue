@@ -1,6 +1,6 @@
 <template>
   <div>
-    <VUserSearchForm @submitted = "searchUser"/>
+    <VUserSearchForm @submitted="searchUser"/>
     <VUserProfile :user="user"/>
   </div>
 </template>
@@ -21,7 +21,7 @@ export default {
   },
   methods:{
     searchUser(username){
-      this.$store.dispatch('SEARCH_USER', {username})
+      this.$store.dispatch('SEARCH_USER', {username});
     }
   }
 }

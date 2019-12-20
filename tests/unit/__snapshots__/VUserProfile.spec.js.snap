@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`VUserProfile render main components 1`] = `[Function]`;
+
+exports[`VUserProfile이 제대로 렌더 되는지 확인 render main html 1`] = `
+<div>
+  UserProfile
+</div>
+`;

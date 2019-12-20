@@ -16,7 +16,9 @@ describe('UserView', () => {
   const build = () => {
     const wrapper = shallowMount(UserView, {
       localVue,
-      store : new Vuex.Store({state, actions})
+      store : new Vuex.Store({
+        state,
+        actions})
     })
     return {
       wrapper,
@@ -65,13 +67,13 @@ describe('UserView', () => {
     expect(userProfile().vm.user).toBe(state.user);
   })
 
-  it('searches for a user when received "submitted"', ()=>{
+  it('submit actionc works', ()=>{
     const expectedUser = "kuroski"
     const {userSearchForm} = build()
 
     userSearchForm().vm.$emit('submitted', expectedUser)
 
     expect(actions.SEARCH_USER).toHaveBeenCalled()
-    expect(actions.SEARCH_USER.mock.calls[0][1]).toEqual({username:expectedUser})    
+    expect(actions.SEARCH_USER.mock.calls[0][1]).toEqual({username: expectedUser })
   })
 })
